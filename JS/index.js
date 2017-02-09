@@ -3,6 +3,9 @@ import { render } from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
 import jquery from 'jquery'
 import app from './app'
+import home from './home'
+import searchpage from './searchpage'
+import resultspage from './resultspage'
 
 render(
   (
