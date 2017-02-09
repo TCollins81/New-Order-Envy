@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { hashHistory, Link } from 'react-router'
 import { ajax } from 'jquery'
-
+// onClick={this.onSubmit}
 export default React.createClass ({
   componentDidMount(){
     ajax({
@@ -16,9 +16,11 @@ export default React.createClass ({
     return{
       isTextValid: false,
       textValue: "",
-      JsonData: ""
+      JsonData: []
     }
   },
+  // TODO: need to figure out how to have both inputs send information to database at the same time??
+  // if both inputs are receiving data, the default behavior is the the second input will trigger ajax call.
   onTextChange(e){
     //when the text is inputed set state changes
     var currentTextInput = e.target.value
@@ -53,14 +55,12 @@ export default React.createClass ({
               <p className="lead">
               <input type="text"
                placeholder="Entree Selection"
-               value=""
                onChange={this.onTextChange}/>
               <input
                 type="text"
                 placeholder="Name of Restaurant"
-                value=""
                 onChange={this.onTextChange}/>
-              <Link className="btn btn-lg bt-default" to="/resultspage" onClick={this.onSubmit} type="submit">GO!</Link>
+              <Link className="btn btn-lg bt-default" to="/resultspage" >GO!</Link>
               </p>
             </div>
           </div>

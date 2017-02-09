@@ -1,11 +1,11 @@
 # New-Order-Envy
 - Final Project at The Iron Yard
 
-Order Envy is a website that you can utilize while visiting The Pearl Brewery in San Antonio, Tx. Do you ever need help deciding on the best place to have lunch or dinner? Maybe there are too many options to choose from or you might not be familiar with the available choices in the area? Order Envy is here to help... You can search for whatever it is you have a "taste" for and Order Envy will generate the top three most popular dishes containing your specified ingredients that are available at restaurants located inside The Pearl Brewery.
+Order Envy is a website that you can utilize while visiting restaurants at The Pearl Brewery in San Antonio, Tx. Do you ever need help deciding on the best entree to have for lunch or dinner? Maybe there are too many options to choose from or you might not be familiar with the available choices? Sometimes a menu just isn't enough and Order Envy is here to help... You can search for menu items and Order Envy will generate the picture of the entree and details, including special dietary restrictions and if the entree contains specified ingredients that are available.
 
 1. What is it?
 
-  - Order Envy is a customized search engine to find the most popular menu items based on location and users input.
+  - Order Envy is a customized search engine to find menu items based on location and users input.
 
 2. Who is it for?
 
@@ -21,7 +21,7 @@ Order Envy is a website that you can utilize while visiting The Pearl Brewery in
 
 5. What does wildly successful look like?
 
-  - To be connected to The Pearl Brewery's home page that pops up and gives ppl the option to try the app for free.
+  - To be connected to The Pearl Brewery's home page that pops up upon wifi login and gives ppl the option to try the app for free.
   - Networking and tasting events sponsored by Order Envy.
 
 
@@ -45,7 +45,7 @@ Order Envy is a website that you can utilize while visiting The Pearl Brewery in
 
 1. Functionality of the search engine to work properly.
 
-2. To be able to return the top three most relevant items from search.
+2. To be able to return the specific image of the entree from search.
 
 ##MILESTONE 1:
 
