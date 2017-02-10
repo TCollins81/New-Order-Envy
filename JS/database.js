@@ -49,9 +49,11 @@ export default React.createClass ({
     return (
       <article>
         <div>
-          <input class="entree" type="text" name="" value=""/>
-          <input class="restaurant" type="text" name="" value=""/>
-          <img class="image" src="..." alt="..."/>
+          <input className="entree" type="text" placeholder="entree"/>
+          <input className="restaurant" type="text" placeholder="restaurant"/>
+          <button type="submit"></button>
+
+          <img className="image" src="..." alt="..."/>
         </div>
       </article>
     )
