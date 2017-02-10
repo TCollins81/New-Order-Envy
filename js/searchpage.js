@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import { hashHistory, Link } from 'react-router'
-import { ajax } from 'jquery'
+import { ajax, post, parseJson } from 'jquery'
 export default React.createClass ({
   componentDidMount(){
     ajax({
