@@ -7,6 +7,7 @@ export default React.createClass({
     return{
       restaurant:"",
       cuisine: "",
+      category: "",
       entree:"",
       image:"",
       itemId:""
@@ -20,6 +21,9 @@ export default React.createClass({
   },
   cuisineData(e){
     this.setState({cuisine:e.target.value})
+  },
+  categoryData(e){
+    this.setState({category:e.target.value})
   },
   entreeData(e){
     this.setState({entree:e.target.value})
@@ -39,6 +43,7 @@ export default React.createClass({
       data: {
         restaurant:this.state.restaurant,
         cuisine:this.state.cuisine,
+        category: this.state.category,
         entree:this.state.entree,
         image:this.state.image
       }
@@ -58,6 +63,7 @@ export default React.createClass({
       <form>
         <input className="formInput" placeholder="Restaurant" onChange={this.restaurantData}></input>
         <input className="formInput" placeholder="Cuisine" onChange={this.cuisineData}></input>
+        <input className="formInput" placeholder="Category" onChange={this.categoryData}></input>
         <input className="formInput" placeholder="Entree" onChange={this.entreeData}></input>
         <input className="formInput" placeholder="Image URL" onChange={this.imageData}></input>
         <button className="formInput" onClick={this.onSubmit}>submit</button>
