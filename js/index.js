@@ -3,13 +3,19 @@ import { render } from 'react-dom'
 import { Router, Route, hashHistory } from 'react-router'
 import jquery from 'jquery'
 import app from './app'
-import database from './database'
+import home from './home'
+import searchpage from './searchpage'
+import resultspage from './resultspage'
+import dataForm from './dataForm'
 
 render(
   (
     <Router history={hashHistory}>
       <Route component={app}>
-        <Route path="/" component={ database } />
+        <Route path="/" component={ home } />
+        <Route path="/searchpage" component={ searchpage } />
+        <Route path="/resultspage" component={ resultspage } />
+        <Route path="/dataForm" component={ dataForm }/>
       </Route>
     </Router>
   ),

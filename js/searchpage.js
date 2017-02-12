@@ -44,7 +44,7 @@ export default React.createClass ({
       error: this.onJsonLoadError
     })
   },
-
+  // get the value of the search inputs into the results page map if statements
   render () {
     return (
       <article>

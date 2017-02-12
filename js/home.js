@@ -12,8 +12,6 @@ export default React.createClass ({
   render () {
     return (
       <div>
-        <h1>Robin breakin the code!</h1>
-        <p>Will webpack notice</p>
         <nav className="navbar navbar-inverse navbar-static-top">
           <div className="container">
             <div className="navbar-header">
