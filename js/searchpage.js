@@ -1,6 +1,7 @@
 import React from 'react'
 import { Render } from 'react'
 import jquery from 'jquery'
+import { hashHistory, Link } from 'react-router'
 
 export default React.createClass ({
   ComponentDidMount(){
@@ -28,33 +29,26 @@ export default React.createClass ({
       textValue: currentTextInput
     })
   },
+
   onSubmit(e){
-    e.preventDefault()
-    var currentTextValue = this.state.textValue
-    ajax({
-      url: "https://tiny-tiny.herokuapp.com/collections/terikaCollins-finalprojectdatabase",
-      dataType: "json",
-      type: "post",
-      data: {
-          entree: "",
-          image: "",
-          restaurant: ""
-      },
-      success: this.onPostJsonLoadSuccess,
-      error: this.onJsonLoadError
+    hashHistory.push({
+      pathname: "/resultspage",
+      search: "?entree="+ this.refs.entree.value + "&" + "restaurant=" + this.refs.restaurant.value
     })
   },
+
   // get the value of the search inputs into the results page map if statements
   render () {
     return (
       <article>
+        <h2>IS YOUR MOUTH WATERING YET?</h2>
+        <p>Enter the name of a specific entree or whatever you have a taste for and the name of the restaurant below!</p>
         <div>
-          <input className="entree" type="text" placeholder="entree"/>
-          <input className="restaurant" type="text" placeholder="restaurant"/>
-          <button type="submit"></button>
-
-          <img className="image" src="..." alt="..."/>
+          <input onChange={this.onTextChange} className="entree" type="text" placeholder="Burger, Vegetarian..." ref="entree"/>
+          <input onChange={this.onTextChange} className="restaurant" type="text" placeholder="Restaurant" ref="restaurant"/>
+          <button onClick={this.onSubmit} className="btn btn-primary btn-lg">Lets Get Envious!</button>
         </div>
+        <p>Please note... some menu items change daily.</p>
       </article>
     )
   }

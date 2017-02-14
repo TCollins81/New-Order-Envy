@@ -12,6 +12,13 @@
 .navbar {
   margin-bottom: 0;
 }
+.jumbotron {
+  background-image: url(http://www.theroastedroot.net/wp-content/uploads/2015/07/how_to_make_a_legit_charcuterie_board_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 
 /* SEARCH PAGE CSS BELOW */
 
@@ -45,6 +52,9 @@ html,
 body {
   height: 100%;
   background-color: #333;
+  background-image: url(http://d2pt85s5g7o5ef.cloudfront.net/atpearl/public_html/assets/cover/_horizontal768/goods.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body {
   color: #fff;
@@ -249,6 +259,7 @@ body {
 
 /* Center align the text within the three columns below the carousel */
 .marketing .col-lg-4 {
+  background-color: #fff;
   margin-bottom: 20px;
   text-align: center;
 }

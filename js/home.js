@@ -41,7 +41,7 @@ export default React.createClass ({
             <div className="col-md-4">
               <span className="glyphicon glyphicon-leaf" aria-hidden="true"></span>
               <h3> Special Dietary Restrictions </h3>
-              <p> Notifications for vegetarian and gluten free options.</p>
+              <p> Search for Vegetarian and Gluten Free options.</p>
             </div>
             <div className="col-md-4">
               <span className="glyphicon glyphicon-globe" aria-hidden="true"></span>
