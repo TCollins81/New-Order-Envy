@@ -18,6 +18,10 @@
   background-size: cover;
 }
 
+.featurette-image {
+  height: 500px;
+  width: 500px;
+}
 
 
 /* SEARCH PAGE CSS BELOW */
@@ -52,9 +56,7 @@ html,
 body {
   height: 100%;
   background-color: #333;
-  background-image: url(http://d2pt85s5g7o5ef.cloudfront.net/atpearl/public_html/assets/cover/_horizontal768/goods.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+
 }
 body {
   color: #fff;

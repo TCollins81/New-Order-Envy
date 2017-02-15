@@ -33,7 +33,7 @@ export default React.createClass ({
   onSubmit(e){
     hashHistory.push({
       pathname: "/resultspage",
-      search: "?entree="+ this.refs.entree.value + "&" + "restaurant=" + this.refs.restaurant.value
+      search: "?cuisine="+ this.refs.cuisine.value + "&" + "restaurant=" + this.refs.restaurant.value
     })
   },
 
@@ -44,7 +44,7 @@ export default React.createClass ({
         <h2>IS YOUR MOUTH WATERING YET?</h2>
         <p>Enter the name of a specific entree or whatever you have a taste for and the name of the restaurant below!</p>
         <div>
-          <input onChange={this.onTextChange} className="entree" type="text" placeholder="Burger, Vegetarian..." ref="entree"/>
+          <input onChange={this.onTextChange} className="entree" type="text" placeholder="Burger, Vegetarian..." ref="cuisine"/>
           <input onChange={this.onTextChange} className="restaurant" type="text" placeholder="Restaurant" ref="restaurant"/>
           <button onClick={this.onSubmit} className="btn btn-primary btn-lg">Lets Get Envious!</button>
         </div>

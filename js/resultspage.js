@@ -8,18 +8,20 @@ export default React.createClass ({
   getInitialState(){
     return {
       listings:[],
+      cuisine: "",
       entree: "",
       restaurant: ""
     }
   },
-  componentWillMount(){
-    return {
-      this.setState({entree: this.props.location.query.entree,
-          restaurant:this.props.location.query.restaurant})
-    }
-  },
-
   componentDidMount(){
+    var newEntree = this.props.location.query.cuisine
+    var newRest = this.props.location.query.restaurant
+    this.setState(
+      {
+        cuisine: newEntree,
+        restaurant:newRest
+      }
+    )
     ajax({
       url:"https://tiny-tiny.herokuapp.com/collections/terikaCollins-finalprojectdatabase",
       datatype:"json",
@@ -27,6 +29,7 @@ export default React.createClass ({
       error: this.error
     })
   },
+
   dataLoaded(results){
     this.setState({listings:results})
   },
@@ -38,6 +41,7 @@ export default React.createClass ({
       dataType: "json",
       type: "post",
       data: {
+          cuisine: "",
           entree: "",
           restaurant: "",
           image: ""
@@ -50,9 +54,11 @@ export default React.createClass ({
     return (
           <div>
             {this.state.listings.map((listing, i)=>{
-              if(listing.restaurant === ""){
+              console.log(listing.restaurant);
+              if(listing.restaurant.toLowerCase() == this.state.restaurant.toLowerCase()
+                && listing.cuisine.toLowerCase().indexOf(this.state.cuisine.toLowerCase()) > -1) {
                 return (
-                  <article className="row featurette">
+                  <article className="row featurette" key={i}>
                     <h2
                       className="featurette-heading">{listing.entree}</h2>
                     <h2
@@ -62,8 +68,25 @@ export default React.createClass ({
                       src={listing.image}/>
                   </article>
           )
-
+        }if(this.state.restaurant == ""
+          && listing.cuisine.toLowerCase().indexOf(this.state.cuisine.toLowerCase()) > -1){
+          return (
+            <article className="row featurette" key={i}>
+              <h2
+                className="featurette-heading">{listing.entree}</h2>
+              <h2
+                className="text-muted">{listing.restaurant}</h2>
+              <img
+                className="featurette-image img-responsive center-block"
+                src={listing.image}/>
+            </article>
+    )
         }
+          // {this.state.listing.map((listing, i)=> {
+          //   return (
+          //
+          //   )
+          // })}
       })}
     </div>
     )
