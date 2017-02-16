@@ -2,7 +2,6 @@ import React from 'react'
 import { render } from 'react-dom'
 import { hashHistory, Link } from 'react-router'
 import { ajax } from 'jquery'
-import { carousel } from 'nuka-carousel'
 
 
 export default React.createClass ({

@@ -10,7 +10,7 @@ export default React.createClass({
       image: [],
       index: 0
     }
-  }
+  },
 
   handleChange(e) {
     this.setState({index: e.activeIndex});
@@ -33,7 +33,7 @@ export default React.createClass({
     <Ons.Page renderToolbar={this.renderToolbar}>
         <Ons.Carousel onPostChange={this.handleChange} index={this.state.index} fullscreen swipeable autoScroll overscrollable>
           {this.state.image.map((image, index) => (
-            <Ons.CarouselItem key={index} style={{background: image}}>
+            <Ons.CarouselImage key={index} style={{background: image}}>
               <div style={{marginTop: '50%', textAlign: 'center'}}>
               </div>
             </Ons.CarouselImage>
@@ -58,5 +58,3 @@ export default React.createClass({
     );
   }
 });
-
-})
