@@ -4,10 +4,9 @@
   "description": "Final Project at The Iron Yard",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "node index.js",
-    "heroku-postbuild": "webpack",
-    "test": "jest"
+    "heroku-postbuild": "webpack"
   },
   "repository": {
     "type": "git",
@@ -35,9 +34,10 @@
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",
     "react-dom": "^15.4.2",
-    "react-redux": "^5.0.2",
     "react-router": "^3.0.2",
     "redux": "^3.6.0",
-    "webpack": "^2.2.1"
-  }
+    "webpack": "^2.2.1",
+    "onsenui": "^2.1.0",
+    "react-onsenui": "^1.1.0"
+  },
 }
