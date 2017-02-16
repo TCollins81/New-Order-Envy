@@ -40,7 +40,7 @@ export default React.createClass ({
   // get the value of the search inputs into the results page map if statements
   render () {
     return (
-      <article>
+      <article className="search">
         <h2>IS YOUR MOUTH WATERING YET?</h2>
         <p>Enter the name of a specific entree or whatever you have a taste for and the name of the restaurant below!</p>
         <div>

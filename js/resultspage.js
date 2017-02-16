@@ -53,6 +53,7 @@ export default React.createClass ({
   render () {
     return (
           <div>
+            <p><Link className="btn btn-primary btn-lg" to="/searchpage">BACK</Link></p>
             {this.state.listings.map((listing, i)=>{
               console.log(listing.restaurant);
               if(listing.restaurant.toLowerCase() == this.state.restaurant.toLowerCase()
@@ -82,11 +83,7 @@ export default React.createClass ({
             </article>
     )
         }
-          // {this.state.listing.map((listing, i)=> {
-          //   return (
-          //
-          //   )
-          // })}
+
       })}
     </div>
     )
