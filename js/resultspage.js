@@ -2,6 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { hashHistory, Link } from 'react-router'
 import { ajax } from 'jquery'
+import { carousel } from 'nuka-carousel'
 
 
 export default React.createClass ({
@@ -13,6 +14,7 @@ export default React.createClass ({
       restaurant: ""
     }
   },
+
   componentDidMount(){
     var newEntree = this.props.location.query.cuisine
     var newRest = this.props.location.query.restaurant
