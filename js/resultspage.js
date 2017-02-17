@@ -1,5 +1,5 @@
 import React from 'react'
-import { render } from 'react-dom'
+import { render, reactdom} from 'react-dom'
 import { hashHistory, Link } from 'react-router'
 import { ajax } from 'jquery'
 
@@ -54,7 +54,7 @@ export default React.createClass ({
   render () {
     return (
           <div>
-            <p><Link className="btn btn-primary btn-lg" to="/searchpage">BACK</Link></p>
+            <p><Link className="backButton" to="/searchpage">BACK</Link></p>
             {this.state.listings.map((listing, i)=>{
               console.log(listing.restaurant);
               if(listing.restaurant.toLowerCase() == this.state.restaurant.toLowerCase()

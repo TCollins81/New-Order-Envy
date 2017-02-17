@@ -16,20 +16,62 @@
   background-image: url(https://github.com/TCollins81/New-Order-Envy/blob/master/photos/photos.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 80px;
+}
+
+.container {
+  padding-top: 10px;
 }
 
 .featurette-image {
-  height: 500px;
-  width: 500px;
+  height: 600px;
+  width: 600px;
 }
 
 .search {
   background-image: url(http://www.thoughtfullystyled.com/wp-content/uploads/2015/08/CharBoard2015-5-1030x687.jpg);
-  padding-top: 500px;
+  padding-top: 200px;
   display: block;
   background-size: cover;
 }
 
+.searchContent {
+  padding-bottom: 400px;
+}
+
+.searchTitle {
+  font-size: 60px;
+}
+
+.searchDescription {
+  font-size: 28px;
+}
+
+.entreeInput {
+  height: 45px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.restaurantInput {
+  height: 45px;
+  width: 300px;
+  border-radius: 8px;
+
+}
+.btn {
+  background-color: darkgrey;
+}
+
+.backButton {
+  float: left;
+  margin-left: 200px;
+  margin-top: 50px;
+  background-color: darkgrey;
+  height: 35px;
+  width: 90px;
+  padding-top: 7px;
+}
 
 /* SEARCH PAGE CSS BELOW */
 

@@ -1,60 +1,38 @@
 import React from 'react'
-import { render } from 'react-dom'
+import { render, reactdom } from 'react-dom'
 import { hashHistory, Link } from 'react-router'
 import { ajax } from 'jquery'
-import { carousel } from 'nuka-carousel'
+var Carousel = require('react-responsive-carousel').Carousel;
 
 export default React.createClass({
-  setDefaultProps(){
-    return {
-      image: [],
-      index: 0
+    render() {
+        return (
+            <Carousel showArrows={true} onChange={onChange} onClickItem={onClickItem} onClickThumb={onClickThumb}>
+                <div>
+                    <img src="assets/1.jpeg" />
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div>
+                    <img src="assets/2.jpeg" />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div>
+                    <img src="assets/3.jpeg" />
+                    <p className="legend">Legend 3</p>
+                </div>
+                <div>
+                    <img src="assets/4.jpeg" />
+                    <p className="legend">Legend 4</p>
+                </div>
+                <div>
+                    <img src="assets/5.jpeg" />
+                    <p className="legend">Legend 5</p>
+                </div>
+                <div>
+                    <img src="assets/6.jpeg" />
+                    <p className="legend">Legend 6</p>
+                </div>
+            </Carousel>
+        );
     }
-  },
-
-  handleChange(e) {
-    this.setState({index: e.activeIndex});
-  },
-
-  renderToolbar() {
-    return (
-      <Ons.Toolbar>
-        <div className='center'>Carousel</div>
-      </Ons.Toolbar>
-    );
-  },
-
-  setIndex(index) {
-    this.setState({index: index});
-  },
-
-  render: function() {
-    return (
-    <Ons.Page renderToolbar={this.renderToolbar}>
-        <Ons.Carousel onPostChange={this.handleChange} index={this.state.index} fullscreen swipeable autoScroll overscrollable>
-          {this.state.image.map((image, index) => (
-            <Ons.CarouselImage key={index} style={{background: image}}>
-              <div style={{marginTop: '50%', textAlign: 'center'}}>
-              </div>
-            </Ons.CarouselImage>
-          ))}
-        </Ons.Carousel>
-
-        <div style={{
-          textAlign: 'center',
-          fontSize: '20px',
-          position: 'absolute',
-          bottom: '36px',
-          left: '0px',
-          right: '0px'
-        }}>
-          {this.state.items.map((image, index) => (
-            <span key={index} style={{cursor: 'pointer'}} onClick={this.setIndex.bind(this, index)}>
-              {this.state.index === index ? '\u25CF' : '\u25CB'}
-            </span>
-          ))}
-        </div>
-      </Ons.Page>
-    );
-  }
 });

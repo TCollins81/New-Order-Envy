@@ -41,14 +41,16 @@ export default React.createClass ({
   render () {
     return (
       <article className="search">
-        <h2>IS YOUR MOUTH WATERING YET?</h2>
-        <p>Enter the name of a specific entree or whatever you have a taste for and the name of the restaurant below!</p>
+        <div className="searchContent">
+        <h2 className="searchTitle">IS YOUR MOUTH WATERING YET?</h2>
+        <p className="searchDescription">Enter the name of a specific entree or whatever you have a taste for and the name of the restaurant below!</p>
         <div>
-          <input onChange={this.onTextChange} className="entree" type="text" placeholder="Burger, Vegetarian..." ref="cuisine"/>
-          <input onChange={this.onTextChange} className="restaurant" type="text" placeholder="Restaurant" ref="restaurant"/>
-          <button onClick={this.onSubmit} className="btn btn-primary btn-lg">Lets Get Envious!</button>
+          <input className="entreeInput" onChange={this.onTextChange} type="text" placeholder="BURGER, VEGETARIAN, ECT..." ref="cuisine"/>
+          <input className="restaurantInput" onChange={this.onTextChange} type="text" placeholder="RESTAURANT NAME" ref="restaurant"/>
+          <button className="searchButton" onClick={this.onSubmit} className="btn btn-primary btn-lg">Lets Get Envious!</button>
         </div>
         <p>Please note... some menu items change daily.</p>
+        </div>
       </article>
     )
   }
