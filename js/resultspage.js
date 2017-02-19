@@ -2,6 +2,7 @@ import React from 'react'
 import { render, reactdom} from 'react-dom'
 import { hashHistory, Link } from 'react-router'
 import { ajax } from 'jquery'
+import carousel from './carousel'
 
 
 export default React.createClass ({
@@ -56,7 +57,6 @@ export default React.createClass ({
           <div>
             <p><Link className="backButton" to="/searchpage">BACK</Link></p>
             {this.state.listings.map((listing, i)=>{
-              console.log(listing.restaurant);
               if(listing.restaurant.toLowerCase() == this.state.restaurant.toLowerCase()
                 && listing.cuisine.toLowerCase().indexOf(this.state.cuisine.toLowerCase()) > -1) {
                 return (
@@ -69,7 +69,8 @@ export default React.createClass ({
                       className="featurette-image img-responsive center-block"
                       src={listing.image}/>
                   </article>
-          )
+
+        )
         }if(this.state.restaurant == ""
           && listing.cuisine.toLowerCase().indexOf(this.state.cuisine.toLowerCase()) > -1){
           return (
