@@ -1,7 +1,7 @@
 {
   "name": "new-order-envy",
   "version": "1.0.0",
-  "description": "Final Project at The Iron Yard",
+  "description": "resume",
   "main": "index.js",
   "scripts": {
     "test": "jest",
@@ -10,14 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TCollins81/New-Order-Envy.git"
+    "url": "git+https://github.com/TCollins81/resume"
   },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TCollins81/New-Order-Envy/issues"
+  "license": "ISC"
   },
-  "homepage": "https://github.com/TCollins81/New-Order-Envy#readme",
+  "homepage": "https://github.com/TCollins81/resume#readme",
   "dependencies": {
     "babel-cli": "^6.22.2",
     "babel-core": "^6.22.1",
