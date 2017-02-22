@@ -52,14 +52,19 @@ export default React.createClass ({
       error: this.error
     })
   },
+
+
   render () {
     return (
           <div>
+            <a name="top"></a>
             <p><Link className="backButton" to="/searchpage">BACK</Link></p>
+
             {this.state.listings.map((listing, i)=>{
               if(listing.restaurant.toLowerCase() == this.state.restaurant.toLowerCase()
                 && listing.cuisine.toLowerCase().indexOf(this.state.cuisine.toLowerCase()) > -1) {
                 return (
+
                   <article className="row featurette" key={i}>
                     <h2
                       className="featurette-heading">{listing.entree}</h2>
@@ -87,6 +92,7 @@ export default React.createClass ({
         }
 
       })}
+      <a href="#top">BACK TO TOP</a>
     </div>
     )
   }

@@ -43,13 +43,14 @@ export default React.createClass ({
       <article className="search">
         <div className="searchContent">
         <h2 className="searchTitle">IS YOUR MOUTH WATERING YET?</h2>
-        <p className="searchDescription">Enter the name of a specific entree or cuisine and/or the name of your favorite Pearl Brewery restuarant below!</p>
+        <p className="searchDescription">Enter the name of a specific entree or cuisine and/or the name of your favorite Pearl Brewery restaurant below!</p>
         <div>
           <input className="entreeInput" onChange={this.onTextChange} type="text" placeholder="BURGER, TACOS, VEGETARIAN, ECT..." ref="cuisine"/>
-          <input className="restaurantInput" onChange={this.onTextChange} type="text" placeholder="NAME OF RESTUARANT" ref="restaurant"/>
+          <input className="restaurantInput" onChange={this.onTextChange} type="text" placeholder="NAME OF RESTAURANT" ref="restaurant"/>
           <button className="searchButton" onClick={this.onSubmit} className="btn btn-primary btn-lg">GO!</button>
         </div>
         <p>Please note... some menu items change daily.</p>
+        <p> For educational purposes only</p>
         </div>
       </article>
     )

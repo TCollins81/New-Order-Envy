@@ -39,7 +39,6 @@ export default React.createClass ({
           </div>
         </div>
       </div>
-
       <a className="left carousel-control" role="button" data-slide="prev">
         <span className="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span className="sr-only">Previous</span>
