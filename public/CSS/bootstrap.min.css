@@ -42,8 +42,8 @@ p {
 }
 
 .featurette-image {
-  height: 600px;
-  width: 600px;
+  height: 700px;
+  width: 700px;
   border: groove;
   border-width: 5px;
   margin-top: 50px
@@ -55,7 +55,6 @@ p {
 }
 
 .homeTitle {
-  text-decoration: underline;
   padding-top : 100px;
 }
 .homeContainer {
