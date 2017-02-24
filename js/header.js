@@ -10,7 +10,7 @@ export default React.createClass({
             <a className="navbar-brand" href="#"> ORDER ENVY </a>
           </div>
             <ul className="nav navbar-nav navbar-right">
-              <li><a href="#">About</a></li>
+              <li><a href="#/about">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
         </div>

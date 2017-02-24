@@ -19,7 +19,73 @@ p {
   color: white;
 }
 
+.about {
+  padding-bottom: 100px;
+  margin-top: -20px;
+  mix-blend-mode: hard-light;
+  background: -webkit-linear-gradient(top, #808080 0%, #210 100%);
+  color: #210;
+  opacity: 0.8;
+}
 
+.aboutWrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.aboutTitle {
+  padding-bottom: 40px;
+  font-family: sans-serif;
+}
+
+.aboutDescription {
+  font-size: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-family: sans-serif;
+  padding-bottom: 100px;
+}
+
+.moreInfo {
+  font-family: sans-serif;
+}
+
+.pearlLink {
+  color: fuchsia;
+  text-decoration: underline;
+  font-family: sans-serif;
+}
+
+.restaurant {
+height: 400px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10px;
+width: 80%;
+padding-left: 175px;
+padding-top: 40px;
+border-bottom-style: groove;
+border-bottom-width: thick;
+}
+
+.phoneLink {
+  color: cyan;
+}
+
+.restaurantImg {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  float: left;
+  border-width: thick;
+  border-style: groove;
+}
+
+
+
+/*search css*/
 .formInput {
   display: block;
   margin: 20px;

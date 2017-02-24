@@ -8,6 +8,7 @@ import searchpage from './searchpage'
 import resultspage from './resultspage'
 import dataForm from './dataForm'
 import carousel from './carousel'
+import about from './about'
 
 
 render(
@@ -19,6 +20,7 @@ render(
         <Route path="/resultspage" component={ resultspage } />
         <Route path="/dataForm" component={ dataForm }/>
         <Route path="/carousel" component={ carousel }/>
+        <Route path="/about" component={ about }/>
       </Route>
     </Router>
   ),

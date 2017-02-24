@@ -88,9 +88,8 @@ export default React.createClass ({
                 className="featurette-image img-responsive center-block"
                 src={listing.image}/>
             </article>
-    )
+          )
         }
-
       })}
       <a href="#top">BACK TO TOP</a>
     </div>
