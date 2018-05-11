@@ -11,7 +11,7 @@ export default React.createClass ({
   },
   render () {
     return (
-      <div>
+      <div className="bodyBackground">
         <div className="jumbotron">
           <div className="container">
             <h1 className="homeTitle"> DONT GET MAD... GET ORDER ENVY. </h1>
