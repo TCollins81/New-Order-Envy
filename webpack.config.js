@@ -2,8 +2,7 @@ module.exports = {
   entry: "./js/index.js",
   devtool: "source-map",
   output: {
-    path: "./public/dist",
-    filename: "bundle.js"
+    filename: ".public/dist/bundle.js"
   },
   module: {
     loaders: [
