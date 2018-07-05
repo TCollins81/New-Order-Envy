@@ -1,8 +1,11 @@
 {
   "name": "new-order-envy",
   "version": "1.0.0",
-  "description": "Final Project at The Iron Yard",
+  "description": "A Visual Menu",
   "main": "index.js",
+  "engines": {
+    "node": "9.11.1"
+  },
   "scripts": {
     "test": "jest",
     "start": "node index.js",
